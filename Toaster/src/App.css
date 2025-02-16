@@ -1,0 +1,59 @@
+
+.App{
+  content: "fixed";
+}
+.container{
+  display: flex;
+   flex-direction: row;
+   gap:1.5rem;
+   cursor: pointer;
+   position: fixed;
+   justify-content: center;
+   align-items: center;
+    top: 50%;
+    left: 40%;
+  }
+  
+  .content:hover{
+    scale: 1.1;
+  }
+
+
+  .toaster{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 4px;
+  
+    margin-left:50rem ;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    animation: slideInFromRight 0.5s ease-in-out ;
+    border-radius: 5px;
+    justify-content: space-between;
+    width: 20rem;
+  }
+
+  @keyframes slideInFromRight {
+    0%{
+      transform:translateX(100%);
+    }
+    100%{
+      transform:translateX(0%);
+    }
+  }
+
+
+  .success{
+    background-color: green;
+  }
+  .warning{
+    background-color: yellow;
+  } 
+
+  .info{
+    background-color: blue;
+  } 
+
+  .danger{
+    background-color: red;
+  } 
